@@ -1,0 +1,45 @@
+<main>
+
+    <!-- Form section-->
+    <section id="form">
+        <div class="container py-5 my-5">
+            <div class="row row-cols-12 g-4">
+                <form class="col" action="/handle-form" method="POST">
+                    <div class="mb-4">
+                      <label for="title" class="form-label">Title</label>
+                      <input type="text" class="form-control" id="title" name="title" value="<%= locals.title %>" aria-describedby="titleHelp">
+                      <div id="titleHelp" class="form-text">Enter a clickbaity title here.</div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="teaser" class="form-label">Teaser</label>
+                        <input type="text" class="form-control" id="teaser" name="teaser" value="<%= locals.teaser %>" aria-describedby="teaserHelp">
+                        <div id="teaserHelp" class="form-text">This helps readers to get the essence of the post fast.</div>
+                      </div>
+                      <div class="mb-4">
+                        <label for="text" class="form-label">Blog post</label>
+                        <textarea type="text" class="form-control" rows="20" id="text" name="text" aria-describedby="textHelp"><%= locals.text %></textarea>
+                        <div id="textHelp" class="form-text">Maximum 3000 characters.</div>
+                      </div>
+                      <input type="hidden" name="id" value="<%= locals.id %>" />
+                    <!-- (need to be added: enctype="multipart/form-data")
+                        <div class="mb-4">
+                        <label for="image" class="form-label">Hero image</label>
+                        <input type="file" class="form-control-file" id="image" name="image" aria-describedby="imgHelp" accept="image/*">
+                        <div id="imgHelp" class="form-text">Upload an image to be shown in the hero section.</div>
+                    </div>  
+                    -->
+
+                    <% if (locals.updateMode === true) { %>
+                      <button type="submit" name="action" value="update" class="btn btn-primary">Update</button>
+                      <button type="submit" name="action" value="delete" class="btn btn-secondary">Delete</button>
+                    <% } else { %>
+                      <button type="submit" name="action" value="save" class="btn btn-primary">Save</button>
+                      <button type="submit" name="action" value="cancel" class="btn btn-secondary">Cancel</button>
+                    <% } %>
+
+                  </form>
+            </div>
+        </div>
+    </section>
+
+</main>

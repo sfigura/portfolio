@@ -1,0 +1,91 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: #f6f6f6;
+}
+
+.navbar.container-fluid {
+    background-color: white;
+    border-radius: 25px;
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.btn {
+    border-radius: 25px;
+}
+
+a.nav-link {
+    color: black;
+    font-size: 1.2rem;
+}
+
+a.navbar-brand {
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.btn-primary {
+    background-color: #0052ff;
+    border-color: #0052ff;
+}
+
+.card {
+    border-radius: 25px;
+}
+
+.navbar-nav {
+    flex-direction:row;
+    margin: 0 !important
+}
+
+.nav-item, .nav-link {
+    margin-right: auto;
+}
+
+.nav-btn {
+    margin-right: 1.25vw;
+}
+
+#hero-background-img {
+    background-image: url('https://images.unsplash.com/photo-1557683316-973673baf926');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+/* Form */
+
+.form-control {
+    border-radius: 25px;
+    border: none;
+}
+
+.form-label {
+    font-size: 1.5rem;
+    font-weight:700;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.form-text {
+    font-size: 0.8rem;
+    color: grey
+}
+
+textarea {
+    resize: none;
+}

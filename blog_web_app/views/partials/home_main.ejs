@@ -1,0 +1,32 @@
+<main>
+    <!-- Hero section -->
+    <section id="hero">
+        <div class="container py-5 my-5">
+            <div class="row my-5">
+                <div class="col-4 col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-4 d-flex flex-column">
+                   <img src="./assets/img/steven.jpeg" class="rounded-circle" alt="steven" loading="lazy"> 
+                </div>
+                <div class="col-6 d-flex flex-column justify-content-end text-left">
+                    <h1>👋 Welcome to my blog!</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-xl-8 col-md-10 col-sm-12 mb-5">
+                     <p>I am writing about life, love, and entrepreneurship in a straight and thought-provoking way.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                 <a href="#contact"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Get in touch</button></a>
+                </div>
+            </div>
+
+          </div>
+    </section>
+
+    <!-- Blog overview section -->
+    <%- include("blog_overview.ejs") %>
+
+    <!-- Contact section -->
+    <%- include("contact_section.ejs") %>
+</main>
